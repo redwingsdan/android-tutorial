@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/"
+    android:clickable="false"
+    android:background="@android:color/darker_gray">
+
+    <TextView android:text="@string/title" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titletext"
+        android:textStyle="normal"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:autoText="false"
+        android:layout_marginBottom="45dp"
+        android:layout_above="@+id/buttona"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Playlist"
+        android:id="@+id/buttonb"
+        android:focusableInTouchMode="false"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:background="#00AAFF"
+        android:alpha="0.85"
+        android:clickable="true"
+        android:fontFamily="Arial"
+        android:layout_below="@+id/buttona"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:onClick="createPlaylist" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Playlist"
+        android:id="@+id/buttona"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="#00AAFF"
+        android:alpha="0.85"
+        android:nestedScrollingEnabled="false"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:minWidth="@dimen/highlight_alpha_material_dark"
+        android:clickable="true"
+        android:fontFamily="Arial"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="editPlaylist" />
+
+</RelativeLayout>
